@@ -10,7 +10,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/015cbe9b3c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
@@ -20,42 +24,40 @@
 
   <body>
     <header id="header" class="bg-paleCyan">
-      <div
+      <!-- nav -->
+      <nav
+        aria-labelledby="primary-navigation"
         class="container mx-auto flex items-center justify-between px-4 pt-6 sm:px-12 sm:pt-5 md:px-20 md:pt-14"
       >
-        <h1 class="sr-only">Huddle</h1>
-        <img
-          src="images/logo.svg"
-          class="h-4 w-24 md:h-9 md:w-48"
-          alt="Huddle logo"
-        />
+        <h2 class="sr-only">Huddle</h2>
+        <img src="images/logo.svg" class="h-4 w-24 lg:h-9 lg:w-48" alt="" />
         <a
           href="#"
-          class="rounded-full bg-white px-6 py-2 text-xs font-semibold text-darkCyan shadow-md md:px-14 md:py-4 md:text-2xl"
+          class="rounded-full bg-white px-6 py-2 text-xs font-semibold text-darkCyan shadow-md md:px-14 md:py-4 lg:text-2xl"
           >Try it free</a
         >
-      </div>
+      </nav>
       <!-- main section -->
       <main
-        class="hero-section container mx-auto mt-24 grid max-w-md gap-y-14 px-10 pb-8 sm:mt-20 sm:max-w-none sm:items-center sm:gap-y-0 sm:gap-x-2 sm:px-12 sm:pt-5 sm:pb-8 md:mt-16 md:gap-x-6 md:px-20 md:pb-16"
+        class="hero-section container mx-auto mt-24 grid gap-y-14 px-10 pb-8 sm:mt-20 sm:items-center sm:gap-x-2 sm:px-12 sm:pt-5 sm:pb-8 md:mt-16 md:gap-y-0 md:gap-x-6 md:px-20 md:pb-16"
       >
         <!-- left section -->
         <div
           class="grid gap-y-10 self-center text-center font-openSans text-darkCyan sm:gap-y-6 sm:text-left md:gap-y-8"
         >
           <h1
-            class="text-2xl font-semibold leading-8 tracking-wider md:text-3xl"
+            class="text-2xl font-semibold leading-8 tracking-wider lg:text-3xl"
           >
             Build The Community Your Fans Will Love
           </h1>
-          <p class="text-base font-normal md:text-lg">
+          <p class="text-base font-normal lg:text-lg">
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
           <a
             href="#"
-            class="mx-auto w-fit rounded-full bg-pink px-14 py-4 text-xs text-white sm:ml-0 md:px-16 md:py-6 md:text-base"
+            class="mx-auto w-fit rounded-full bg-pink px-14 py-4 text-xs text-white sm:ml-0 lg:text-base"
           >
             Get Started For Free
           </a>
@@ -66,39 +68,186 @@
         </div>
       </main>
     </header>
-    <!-- features section 1-->
-    <section
-      class="container mt-14 px-4 sm:mt-16 sm:px-12 md:mt-20 md:px-14 lg:mt-40 lg:px-28"
-    >
-      <!-- feature wrapper -->
+    <!-- feature section -->
+    <section class="bg-gray-50" id="feature">
+      <h1 class="sr-only">Features</h1>
+      <!-- feature container -->
       <div
-        class="sm:gap-y-none feature-wrapper mx-auto grid max-w-sm justify-between gap-y-16 rounded-xl p-10 shadow-2xl sm:max-w-none sm:px-12 sm:py-6 md:px-16 md:py-8"
+        class="container mx-auto grid gap-y-10 px-6 pt-16 text-center font-openSans text-darkCyan md:px-16 md:text-left"
       >
+        <!-- card 1 -->
         <div
-          class="mx-auto w-48 justify-self-end border sm:order-1 sm:mx-0 sm:h-40 sm:w-44 md:h-48 md:w-52 lg:w-80 lg:h-80"
+          class="grid gap-y-10 rounded-xl bg-white p-10 shadow-2xl md:grid-cols-2 md:gap-y-0 md:px-16"
         >
+          <!-- card image -->
           <img
             src="images/illustration-grow-together.svg"
-            alt="illustration image for growing together"
-            class=""
+            alt="image illustrating to grow illustration-grow-together"
+            class="mx-auto w-64 md:order-1 md:mx-0 md:w-[220px] md:justify-self-end lg:w-72"
           />
+          <!-- card text -->
+          <div class="max-w-[400px] md:self-center">
+            <h3 class="mb-6 text-2xl font-semibold">Grow Together</h3>
+            <p class="font-normal text-grayishBlue">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
         </div>
-        <!-- text section -->
-        <div class="text-center font-openSans sm:self-center sm:text-left">
-          <h1
-            class="mb-4 text-lg font-semibold text-darkCyan sm:mb-2 sm:text-base md:mb-3 md:text-xl"
-          >
-            Grow Together
-          </h1>
-          <p
-            class="text-base font-normal text-grayishBlue sm:text-sm"
-          >
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
+        <!-- card 2 -->
+        <div
+          class="grid gap-y-10 rounded-xl bg-white p-10 shadow-2xl md:grid-cols-2 md:items-center md:gap-y-0 md:px-16"
+        >
+          <!-- card image -->
+          <img
+            src="images/illustration-flowing-conversation.svg"
+            alt="image illustrating to grow illustration-grow-together"
+            class="mx-auto w-64 md:mx-0 md:w-[220px] md:justify-self-start lg:w-72"
+          />
+          <!-- card text -->
+          <div class="max-w-[400px]">
+            <h3 class="mb-6 text-2xl font-semibold">Flowing Conversations</h3>
+            <p class="font-normal text-grayishBlue">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="grid gap-y-10 rounded-xl bg-white p-10 shadow-2xl md:grid-cols-2 md:gap-y-0 md:px-16"
+        >
+          <!-- card image -->
+          <img
+            src="images/illustration-your-users.svg"
+            alt="image of your users"
+            class="mx-auto w-64 md:order-1 md:mx-0 md:w-[220px] md:justify-self-end lg:w-72"
+          />
+          <!-- card text -->
+          <div class="order-1 max-w-[400px] md:self-center">
+            <h3 class="mb-6 text-2xl font-semibold">Your Users</h3>
+            <p class="font-normal text-grayishBlue">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer id="footer" class="relative mt-56 bg-darkCyan font-openSans">
+      <!-- call to action -->
+      <div
+        class="min-w-1/2 mx-auto w-fit -translate-y-1/2 rounded-xl bg-white py-10 px-6 text-center shadow-xl shadow-darkCyan sm:p-10"
+      >
+        <h3 class="mb-6 text-xl font-semibold">
+          Ready To Build Your Community?
+        </h3>
+        <a
+          href="#"
+          class="mx-auto w-fit rounded-full bg-pink px-14 py-4 text-xs text-white sm:ml-0 lg:text-base"
+        >
+          Get Started For Free
+        </a>
+      </div>
+      <!-- footer container -->
+      <div
+        class="container mx-auto px-4 pt-24 pb-12 text-white sm:px-12 md:px-16 md:pt-28 lg:px-20"
+      >
+        <h2 class="sr-only">Huddle</h2>
+        <!-- logo icon -->
+        <img src="images/logo-white.svg" class="h-[29px] w-[170px]" alt="" />
+        <!-- footer nav -->
+        <nav
+          class="footer-nav mt-8 grid text-xs md:gap-x-1 lg:text-sm"
+          aria-labelledby="secondary-navigation"
+        >
+          <!-- address -->
+          <ul class="grid gap-y-8" role="list">
+            <li class="footer-nav-item grid gap-x-5">
+              <img src="images/icon-location.svg" alt="" />
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua</span
+              >
+            </li>
+            <li class="footer-nav-item grid justify-items-start gap-x-5">
+              <img src="images/icon-phone.svg" alt="" />
+              <span>+1-543-123-4567</span>
+            </li>
+            <li class="footer-nav-item grid gap-x-5">
+              <img src="images/icon-email.svg" alt="" />
+              <span> example@huddle.com </span>
+            </li>
+          </ul>
+          <!-- About Us -->
+          <ul class="mt-16 grid gap-y-6 md:m-0 md:gap-y-2">
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>FAQ</li>
+          </ul>
+          <!-- Contact -->
+          <ul class="mt-6 grid gap-y-6 md:m-0 md:gap-y-2">
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+          <div class="flex-col justify-between md:flex">
+            <!-- Social Icons -->
+            <ul class="mx-auto mt-14 flex w-max gap-x-3 md:m-0">
+              <!-- facebook icon -->
+              <li
+                class="group grid h-8 w-8 cursor-pointer place-items-center rounded-full border border-white hover:border-pink"
+              >
+                <a
+                  href="https://www.facebook.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="sr-only">Facebook</span>
+                  <i class="fa-brands fa-facebook-f group-hover:text-pink"></i>
+                </a>
+              </li>
+              <!-- twitter icon -->
+              <li
+                class="group grid h-8 w-8 cursor-pointer place-items-center rounded-full border border-white hover:border-pink"
+              >
+                <a
+                  href="https://www.twitter.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="sr-only">twitter</span>
+                  <i class="fa-brands fa-twitter group-hover:text-pink"></i>
+                </a>
+              </li>
+              <!-- instagram icon -->
+              <li
+                class="group grid h-8 w-8 cursor-pointer place-items-center rounded-full border border-white hover:border-pink"
+              >
+                <a
+                  href="https://www.instagram.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="sr-only">instagram</span>
+                  <i class="fa-brands fa-instagram group-hover:text-pink"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- copyright -->
+            <p class="mt-6 text-center text-xs md:w-max md:text-right">
+              &copy; Copyright 2018 Huddle. All rights reserved.
+            </p>
+          </div>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
