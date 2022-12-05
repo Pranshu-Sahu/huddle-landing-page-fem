@@ -16,5 +16,5 @@
 node_modules
 package-lock.json
 package.json
-tailwind.config.json
+tailwind.config.js
 content.txt
